@@ -33,6 +33,8 @@
 		93B56B112A9AF66A00BA84B5 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B102A9AF66A00BA84B5 /* Screen.swift */; };
 		93B56B172A9B978000BA84B5 /* WarDataDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B152A9B978000BA84B5 /* WarDataDetailsTableViewCell.swift */; };
 		93B56B182A9B978000BA84B5 /* WarDataDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B56B162A9B978000BA84B5 /* WarDataDetailsTableViewCell.xib */; };
+		93B56B1B2A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B192A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.swift */; };
+		93B56B1C2A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B56B1A2A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		93B56B102A9AF66A00BA84B5 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		93B56B152A9B978000BA84B5 /* WarDataDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarDataDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		93B56B162A9B978000BA84B5 /* WarDataDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WarDataDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		93B56B192A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarDataSpecifiedEquipmentViewController.swift; sourceTree = "<group>"; };
+		93B56B1A2A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WarDataSpecifiedEquipmentViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +278,8 @@
 		93B56B132A9B877E00BA84B5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				93B56B192A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.swift */,
+				93B56B1A2A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -348,6 +354,7 @@
 				933C0E4B2A9A7A2C00356B40 /* CustomNavigationBarView.xib in Resources */,
 				933C0E462A9A730300356B40 /* WarDataListTableViewCell.xib in Resources */,
 				93B56B0C2A9AECBC00BA84B5 /* WarDataDetailsViewController.xib in Resources */,
+				93B56B1C2A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.xib in Resources */,
 				9324EDBD2A991B3500338913 /* LaunchScreen.storyboard in Resources */,
 				93B56B182A9B978000BA84B5 /* WarDataDetailsTableViewCell.xib in Resources */,
 				933C0E3B2A9A6FC200356B40 /* WarDataListViewController.xib in Resources */,
@@ -377,6 +384,7 @@
 				9324EDB32A991B3300338913 /* SceneDelegate.swift in Sources */,
 				93B56AFB2A9ACE2F00BA84B5 /* SummaryModel.swift in Sources */,
 				933C0E492A9A7A1400356B40 /* CustomNavigationBarView.swift in Sources */,
+				93B56B1B2A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.swift in Sources */,
 				93B56B052A9AD1E200BA84B5 /* Const.swift in Sources */,
 				93B56AE52A9AC23900BA84B5 /* SummaryPersonnelModel.swift in Sources */,
 				93B56B0B2A9AECBC00BA84B5 /* WarDataDetailsViewController.swift in Sources */,

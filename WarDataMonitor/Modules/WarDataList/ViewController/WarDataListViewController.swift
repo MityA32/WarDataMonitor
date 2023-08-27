@@ -27,7 +27,7 @@ final class WarDataListViewController: UIViewController {
     }
     
     private func setup() {
-        
+        navigationController?.navigationBar.isHidden = true
         model.didUpdatedPersonnelInfoList = {
             DispatchQueue.main.async { [weak self] in
                 guard let self else { return }
