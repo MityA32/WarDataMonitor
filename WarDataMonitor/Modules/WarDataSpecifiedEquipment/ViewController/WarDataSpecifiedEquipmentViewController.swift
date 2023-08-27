@@ -48,6 +48,7 @@ final class WarDataSpecifiedEquipmentViewController: UIViewController {
         specifiedEquipmentLossesTableView.delegate = self
         specifiedEquipmentLossesTableView.dataSource = self
         specifiedEquipmentLossesTableView.register(UINib(nibName: SpecifiedEquipmentLossesTableViewCell.id, bundle: nil), forCellReuseIdentifier: SpecifiedEquipmentLossesTableViewCell.id)
+        specifiedEquipmentLossesTableView.separatorStyle = .none
         specifiedEquipmentLossesTableView.rowHeight = UITableView.automaticDimension
     }
 
@@ -119,5 +120,3 @@ extension WarDataSpecifiedEquipmentViewController: UITableViewDelegate, UITableV
         }
     }
 }
-
-    
