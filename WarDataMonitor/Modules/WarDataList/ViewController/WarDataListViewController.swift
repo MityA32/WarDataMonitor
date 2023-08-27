@@ -81,5 +81,4 @@ extension WarDataListViewController: UITableViewDelegate, UITableViewDataSource 
         warDataDetails.equipmentInfo = model.equipmentInfo[size - indexPath.row - 1]
         navigationController?.pushViewController(warDataDetails, animated: true)
     }
-    
 }

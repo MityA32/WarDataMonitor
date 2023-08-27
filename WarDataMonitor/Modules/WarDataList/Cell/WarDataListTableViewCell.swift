@@ -23,5 +23,4 @@ final class WarDataListTableViewCell: UITableViewCell {
         personnelNumberLabel.text = "☠️ Personnel: \(model.personnel)"
         powNumberLabel.text = "🏳 POW: \(model.pow)"
     }
-    
 }

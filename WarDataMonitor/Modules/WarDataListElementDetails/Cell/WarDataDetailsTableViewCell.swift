@@ -61,21 +61,4 @@ final class WarDataDetailsTableViewCell: UITableViewCell {
                 infoLabel.text = "Cruise Missles: \(model.cruiseMissles)"
         }
     }
-    
-    func configure<T, Row: CaseIterable>(from model: T, section: Section, row: Row) {
-        switch section {
-        case .general:
-            guard let model = model as? SummaryPersonnel,
-                  let row = row as? GeneralSectionFields else { return }
-            
-        case .personnel:
-            guard let model = model as? SummaryPersonnel,
-                  let row = row as? PersonnelSectionFields else { return }
-            
-        case .equipment:
-            guard let model = model as? SummaryEquipment,
-                  let row = row as? EquipmentSectionFields else { return }
-            
-        }
-    }
 }

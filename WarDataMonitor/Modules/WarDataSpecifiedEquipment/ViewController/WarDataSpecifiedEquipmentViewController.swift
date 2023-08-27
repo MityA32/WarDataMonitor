@@ -99,13 +99,10 @@ extension WarDataSpecifiedEquipmentViewController: UITableViewDelegate, UITableV
         guard let sizeOfSection = self.model.specifiedEquipmentList[equipmentType]?.count else { return }
         func indexPathsForSection() -> [IndexPath] {
             var indexPaths = [IndexPath]()
-            
-            
             for row in 0 ..< sizeOfSection {
                 indexPaths.append(IndexPath(row: row,
                                             section: section))
             }
-            
             return indexPaths
         }
         
