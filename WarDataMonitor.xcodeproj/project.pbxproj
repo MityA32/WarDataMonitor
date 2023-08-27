@@ -21,6 +21,15 @@
 		93B56AE52A9AC23900BA84B5 /* SummaryPersonnelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56AE42A9AC23900BA84B5 /* SummaryPersonnelModel.swift */; };
 		93B56AE92A9AC28100BA84B5 /* SummaryEquipmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56AE82A9AC28100BA84B5 /* SummaryEquipmentModel.swift */; };
 		93B56AF22A9AC44500BA84B5 /* OptionalReportParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56AF12A9AC44500BA84B5 /* OptionalReportParameters.swift */; };
+		93B56AF62A9ACD8700BA84B5 /* SummaryEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56AF52A9ACD8700BA84B5 /* SummaryEquipment.swift */; };
+		93B56AF82A9ACD9900BA84B5 /* SummaryPersonnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56AF72A9ACD9900BA84B5 /* SummaryPersonnel.swift */; };
+		93B56AFB2A9ACE2F00BA84B5 /* SummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56AFA2A9ACE2F00BA84B5 /* SummaryModel.swift */; };
+		93B56AFD2A9ACE6300BA84B5 /* SummaryDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56AFC2A9ACE6300BA84B5 /* SummaryDataFetcher.swift */; };
+		93B56AFF2A9ACFDF00BA84B5 /* SummaryDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56AFE2A9ACFDF00BA84B5 /* SummaryDataParser.swift */; };
+		93B56B052A9AD1E200BA84B5 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B042A9AD1E200BA84B5 /* Const.swift */; };
+		93B56B082A9ADE0800BA84B5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B072A9ADE0800BA84B5 /* String+Extension.swift */; };
+		93B56B0B2A9AECBC00BA84B5 /* WarDataDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B092A9AECBC00BA84B5 /* WarDataDetailsViewController.swift */; };
+		93B56B0C2A9AECBC00BA84B5 /* WarDataDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B56B0A2A9AECBC00BA84B5 /* WarDataDetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +49,15 @@
 		93B56AE42A9AC23900BA84B5 /* SummaryPersonnelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryPersonnelModel.swift; sourceTree = "<group>"; };
 		93B56AE82A9AC28100BA84B5 /* SummaryEquipmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryEquipmentModel.swift; sourceTree = "<group>"; };
 		93B56AF12A9AC44500BA84B5 /* OptionalReportParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalReportParameters.swift; sourceTree = "<group>"; };
+		93B56AF52A9ACD8700BA84B5 /* SummaryEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryEquipment.swift; sourceTree = "<group>"; };
+		93B56AF72A9ACD9900BA84B5 /* SummaryPersonnel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryPersonnel.swift; sourceTree = "<group>"; };
+		93B56AFA2A9ACE2F00BA84B5 /* SummaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryModel.swift; sourceTree = "<group>"; };
+		93B56AFC2A9ACE6300BA84B5 /* SummaryDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryDataFetcher.swift; sourceTree = "<group>"; };
+		93B56AFE2A9ACFDF00BA84B5 /* SummaryDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryDataParser.swift; sourceTree = "<group>"; };
+		93B56B042A9AD1E200BA84B5 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		93B56B072A9ADE0800BA84B5 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		93B56B092A9AECBC00BA84B5 /* WarDataDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarDataDetailsViewController.swift; sourceTree = "<group>"; };
+		93B56B0A2A9AECBC00BA84B5 /* WarDataDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WarDataDetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +90,7 @@
 		9324EDAF2A991B3300338913 /* WarDataMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				93B56B022A9AD1C600BA84B5 /* Utils */,
 				9324EDC62A9A694400338913 /* Modules */,
 				9324EDC52A9A692D00338913 /* Resources */,
 				9324EDC42A9A691A00338913 /* Application */,
@@ -147,6 +166,8 @@
 		933C0E382A9A6F6F00356B40 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				93B56B092A9AECBC00BA84B5 /* WarDataDetailsViewController.swift */,
+				93B56B0A2A9AECBC00BA84B5 /* WarDataDetailsViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -172,9 +193,11 @@
 		933C0E472A9A74E700356B40 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				93B56AEA2A9AC2A700BA84B5 /* OptionalReportParameters */,
-				93B56AE42A9AC23900BA84B5 /* SummaryPersonnelModel.swift */,
-				93B56AE82A9AC28100BA84B5 /* SummaryEquipmentModel.swift */,
+				93B56AF42A9ACD6900BA84B5 /* ModelForApplicationUsage */,
+				93B56AF32A9ACD3B00BA84B5 /* ModelForFetching */,
+				93B56AFA2A9ACE2F00BA84B5 /* SummaryModel.swift */,
+				93B56AFC2A9ACE6300BA84B5 /* SummaryDataFetcher.swift */,
+				93B56AFE2A9ACFDF00BA84B5 /* SummaryDataParser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,6 +208,50 @@
 				93B56AF12A9AC44500BA84B5 /* OptionalReportParameters.swift */,
 			);
 			path = OptionalReportParameters;
+			sourceTree = "<group>";
+		};
+		93B56AF32A9ACD3B00BA84B5 /* ModelForFetching */ = {
+			isa = PBXGroup;
+			children = (
+				93B56AEA2A9AC2A700BA84B5 /* OptionalReportParameters */,
+				93B56AE42A9AC23900BA84B5 /* SummaryPersonnelModel.swift */,
+				93B56AE82A9AC28100BA84B5 /* SummaryEquipmentModel.swift */,
+			);
+			path = ModelForFetching;
+			sourceTree = "<group>";
+		};
+		93B56AF42A9ACD6900BA84B5 /* ModelForApplicationUsage */ = {
+			isa = PBXGroup;
+			children = (
+				93B56AF52A9ACD8700BA84B5 /* SummaryEquipment.swift */,
+				93B56AF72A9ACD9900BA84B5 /* SummaryPersonnel.swift */,
+			);
+			path = ModelForApplicationUsage;
+			sourceTree = "<group>";
+		};
+		93B56B022A9AD1C600BA84B5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				93B56B062A9ADDEF00BA84B5 /* Extensions */,
+				93B56B032A9AD1CF00BA84B5 /* Const */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		93B56B032A9AD1CF00BA84B5 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				93B56B042A9AD1E200BA84B5 /* Const.swift */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		93B56B062A9ADDEF00BA84B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				93B56B072A9ADE0800BA84B5 /* String+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +314,7 @@
 			files = (
 				933C0E4B2A9A7A2C00356B40 /* CustomNavigationBarView.xib in Resources */,
 				933C0E462A9A730300356B40 /* WarDataListTableViewCell.xib in Resources */,
+				93B56B0C2A9AECBC00BA84B5 /* WarDataDetailsViewController.xib in Resources */,
 				9324EDBD2A991B3500338913 /* LaunchScreen.storyboard in Resources */,
 				933C0E3B2A9A6FC200356B40 /* WarDataListViewController.xib in Resources */,
 				9324EDBA2A991B3500338913 /* Assets.xcassets in Resources */,
@@ -260,15 +328,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B56B082A9ADE0800BA84B5 /* String+Extension.swift in Sources */,
+				93B56AFD2A9ACE6300BA84B5 /* SummaryDataFetcher.swift in Sources */,
 				93B56AE92A9AC28100BA84B5 /* SummaryEquipmentModel.swift in Sources */,
+				93B56AF62A9ACD8700BA84B5 /* SummaryEquipment.swift in Sources */,
+				93B56AFF2A9ACFDF00BA84B5 /* SummaryDataParser.swift in Sources */,
 				9324EDB52A991B3300338913 /* BaseViewController.swift in Sources */,
 				933C0E3D2A9A704B00356B40 /* WarDataListViewController.swift in Sources */,
 				933C0E452A9A730300356B40 /* WarDataListTableViewCell.swift in Sources */,
 				9324EDB12A991B3300338913 /* AppDelegate.swift in Sources */,
 				93B56AF22A9AC44500BA84B5 /* OptionalReportParameters.swift in Sources */,
 				9324EDB32A991B3300338913 /* SceneDelegate.swift in Sources */,
+				93B56AFB2A9ACE2F00BA84B5 /* SummaryModel.swift in Sources */,
 				933C0E492A9A7A1400356B40 /* CustomNavigationBarView.swift in Sources */,
+				93B56B052A9AD1E200BA84B5 /* Const.swift in Sources */,
 				93B56AE52A9AC23900BA84B5 /* SummaryPersonnelModel.swift in Sources */,
+				93B56B0B2A9AECBC00BA84B5 /* WarDataDetailsViewController.swift in Sources */,
+				93B56AF82A9ACD9900BA84B5 /* SummaryPersonnel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

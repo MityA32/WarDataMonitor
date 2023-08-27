@@ -33,7 +33,7 @@
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0kX-AG-2gS">
-                    <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                    <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
@@ -46,7 +46,7 @@
                 <constraint firstItem="K9q-Pe-w5Z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MUa-rE-ugT"/>
                 <constraint firstItem="Iii-TV-hMd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="OhJ-Fj-7gd"/>
                 <constraint firstItem="0kX-AG-2gS" firstAttribute="top" secondItem="Iii-TV-hMd" secondAttribute="bottom" id="PCY-gL-2rU"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0kX-AG-2gS" secondAttribute="bottom" id="XGg-mn-FRt"/>
+                <constraint firstAttribute="bottom" secondItem="0kX-AG-2gS" secondAttribute="bottom" id="XGg-mn-FRt"/>
                 <constraint firstItem="Iii-TV-hMd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="aFK-Ds-pO1"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="K9q-Pe-w5Z" secondAttribute="trailing" id="qDd-Vu-rv1"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Iii-TV-hMd" secondAttribute="trailing" id="rM3-1Q-W1f"/>

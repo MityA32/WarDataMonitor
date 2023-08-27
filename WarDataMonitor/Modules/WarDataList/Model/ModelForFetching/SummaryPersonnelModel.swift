@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SummaryPersonnelModel: Codable {
+struct SummaryPersonnelModel: Decodable {
     
     let date: String
     var day: Int
@@ -26,7 +26,6 @@ struct SummaryPersonnelModel: Codable {
 }
 
 extension SummaryPersonnelModel {
-    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         self.date = try values.decode(String.self, forKey: .date)
@@ -39,19 +38,4 @@ extension SummaryPersonnelModel {
             self.pow = .none
         }
     }
-    
-    func encode(to encoder: Encoder) throws {
-           var container = encoder.container(keyedBy: CodingKeys.self)
-           try container.encode(date, forKey: .date)
-           try container.encode(day, forKey: .day)
-           try container.encode(personnel, forKey: .personnel)
-           try container.encode(personnelAbout, forKey: .personnelAbout)
-           switch pow {
-               case .number(let value):
-                   try container.encode(value, forKey: .pow)
-               case .none:
-                   break
-           }
-       }
-    
 }

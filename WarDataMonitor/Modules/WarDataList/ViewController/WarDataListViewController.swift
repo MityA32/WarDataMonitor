@@ -14,7 +14,7 @@ class WarDataListViewController: UIViewController {
     @IBOutlet private weak var navigationBarView: CustomNavigationBarView!
     @IBOutlet private weak var warDataTableView: UITableView!
     
-    var model: [String] = ["abc1","abc2","abc3","abc4","abc5","abc6","abc7","abc8","abc9","abc10"]
+    var model = SummaryModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +28,12 @@ class WarDataListViewController: UIViewController {
     
     private func setup() {
         
+        model.didUpdatedPersonnelInfoList = {
+            DispatchQueue.main.async { [weak self] in
+                guard let self else { return }
+                self.warDataTableView.reloadData()
+            }
+        }
         setupView()
     }
     
@@ -44,7 +50,8 @@ class WarDataListViewController: UIViewController {
     private func setupTableView() {
         warDataTableView.delegate = self
         warDataTableView.dataSource = self
-        
+        warDataTableView.separatorStyle = .none
+        warDataTableView.backgroundColor = .systemGray6
         warDataTableView.register(UINib(nibName: "WarDataListTableViewCell", bundle: nil), forCellReuseIdentifier: WarDataListTableViewCell.id)
     }
     
@@ -52,17 +59,23 @@ class WarDataListViewController: UIViewController {
 
 extension WarDataListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return model.personnelInfo.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = warDataTableView.dequeueReusableCell(withIdentifier: WarDataListTableViewCell.id, for: indexPath) as! WarDataListTableViewCell
-        cell.configure(from: model[indexPath.row])
+        let size = model.personnelInfo.count
+        cell.configure(from: model.personnelInfo[size - indexPath.row - 1])
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        100
+        140
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let warDataDetails = WarDataDetailsViewController(nibName: WarDataDetailsViewController.nibName, bundle: nil)
+        navigationController?.pushViewController(warDataDetails, animated: true)
     }
     
 }

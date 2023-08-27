@@ -48,8 +48,6 @@ struct SummaryEquipmentModel: Decodable {
         case vehiclesAndFuelTanks = "vehicles and fuel tanks"
         case cruiseMissles = "cruise missiles"
     }
-    
-    
 }
 
 extension SummaryEquipmentModel {
@@ -117,6 +115,4 @@ extension SummaryEquipmentModel {
             self.cruiseMissles = .none
         }
     }
-    
-    
 }

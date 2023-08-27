@@ -11,12 +11,16 @@ class WarDataListTableViewCell: UITableViewCell {
 
     static let id = "WarDataListTableViewCell"
     
-    @IBOutlet private weak var placeholder: UILabel!
+    @IBOutlet private weak var dateLabel: UILabel!
+    @IBOutlet private weak var dayLabel: UILabel!
+    @IBOutlet private weak var personnelNumberLabel: UILabel!
+    @IBOutlet private weak var powNumberLabel: UILabel!
     
-   
-    
-    func configure(from model: String) {
-        placeholder.text = model
+    func configure(from model: SummaryPersonnel) {
+        dateLabel.text = "🗓 \(model.date)"
+        dayLabel.text = "🌍 Day: \(model.day)"
+        personnelNumberLabel.text = "☠️ Personnel: \(model.personnel)"
+        powNumberLabel.text = "🏳 POW: \(model.pow)"
     }
     
 }
