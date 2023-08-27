@@ -20,7 +20,6 @@
 		933C0E4B2A9A7A2C00356B40 /* CustomNavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 933C0E4A2A9A7A2C00356B40 /* CustomNavigationBarView.xib */; };
 		93B56AE52A9AC23900BA84B5 /* SummaryPersonnelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56AE42A9AC23900BA84B5 /* SummaryPersonnelModel.swift */; };
 		93B56AE92A9AC28100BA84B5 /* SummaryEquipmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56AE82A9AC28100BA84B5 /* SummaryEquipmentModel.swift */; };
-		93B56AF22A9AC44500BA84B5 /* OptionalReportParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56AF12A9AC44500BA84B5 /* OptionalReportParameters.swift */; };
 		93B56AF62A9ACD8700BA84B5 /* SummaryEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56AF52A9ACD8700BA84B5 /* SummaryEquipment.swift */; };
 		93B56AF82A9ACD9900BA84B5 /* SummaryPersonnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56AF72A9ACD9900BA84B5 /* SummaryPersonnel.swift */; };
 		93B56AFB2A9ACE2F00BA84B5 /* SummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56AFA2A9ACE2F00BA84B5 /* SummaryModel.swift */; };
@@ -32,6 +31,8 @@
 		93B56B0C2A9AECBC00BA84B5 /* WarDataDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B56B0A2A9AECBC00BA84B5 /* WarDataDetailsViewController.xib */; };
 		93B56B0F2A9AF23900BA84B5 /* SectionsOfDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B0E2A9AF23900BA84B5 /* SectionsOfDetailsScreen.swift */; };
 		93B56B112A9AF66A00BA84B5 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B102A9AF66A00BA84B5 /* Screen.swift */; };
+		93B56B172A9B978000BA84B5 /* WarDataDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B152A9B978000BA84B5 /* WarDataDetailsTableViewCell.swift */; };
+		93B56B182A9B978000BA84B5 /* WarDataDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B56B162A9B978000BA84B5 /* WarDataDetailsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +51,6 @@
 		933C0E4A2A9A7A2C00356B40 /* CustomNavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBarView.xib; sourceTree = "<group>"; };
 		93B56AE42A9AC23900BA84B5 /* SummaryPersonnelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryPersonnelModel.swift; sourceTree = "<group>"; };
 		93B56AE82A9AC28100BA84B5 /* SummaryEquipmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryEquipmentModel.swift; sourceTree = "<group>"; };
-		93B56AF12A9AC44500BA84B5 /* OptionalReportParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalReportParameters.swift; sourceTree = "<group>"; };
 		93B56AF52A9ACD8700BA84B5 /* SummaryEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryEquipment.swift; sourceTree = "<group>"; };
 		93B56AF72A9ACD9900BA84B5 /* SummaryPersonnel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryPersonnel.swift; sourceTree = "<group>"; };
 		93B56AFA2A9ACE2F00BA84B5 /* SummaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryModel.swift; sourceTree = "<group>"; };
@@ -62,6 +62,8 @@
 		93B56B0A2A9AECBC00BA84B5 /* WarDataDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WarDataDetailsViewController.xib; sourceTree = "<group>"; };
 		93B56B0E2A9AF23900BA84B5 /* SectionsOfDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsOfDetailsScreen.swift; sourceTree = "<group>"; };
 		93B56B102A9AF66A00BA84B5 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		93B56B152A9B978000BA84B5 /* WarDataDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarDataDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		93B56B162A9B978000BA84B5 /* WarDataDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WarDataDetailsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		9324EDC62A9A694400338913 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				93B56B122A9B7B5A00BA84B5 /* WarDataSpecifiedEquipment */,
 				933C0E372A9A6EC700356B40 /* WarDataListElementDetails */,
 				933C0E362A9A6EBB00356B40 /* WarDataList */,
 				9324EDC82A9A695C00338913 /* LaunchScreen */,
@@ -163,6 +166,7 @@
 		933C0E372A9A6EC700356B40 /* WarDataListElementDetails */ = {
 			isa = PBXGroup;
 			children = (
+				93B56B142A9B8ECE00BA84B5 /* Cell */,
 				93B56B0D2A9AF1ED00BA84B5 /* Model */,
 				933C0E382A9A6F6F00356B40 /* ViewController */,
 			);
@@ -208,18 +212,9 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		93B56AEA2A9AC2A700BA84B5 /* OptionalReportParameters */ = {
-			isa = PBXGroup;
-			children = (
-				93B56AF12A9AC44500BA84B5 /* OptionalReportParameters.swift */,
-			);
-			path = OptionalReportParameters;
-			sourceTree = "<group>";
-		};
 		93B56AF32A9ACD3B00BA84B5 /* ModelForFetching */ = {
 			isa = PBXGroup;
 			children = (
-				93B56AEA2A9AC2A700BA84B5 /* OptionalReportParameters */,
 				93B56AE42A9AC23900BA84B5 /* SummaryPersonnelModel.swift */,
 				93B56AE82A9AC28100BA84B5 /* SummaryEquipmentModel.swift */,
 			);
@@ -266,6 +261,30 @@
 				93B56B0E2A9AF23900BA84B5 /* SectionsOfDetailsScreen.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		93B56B122A9B7B5A00BA84B5 /* WarDataSpecifiedEquipment */ = {
+			isa = PBXGroup;
+			children = (
+				93B56B132A9B877E00BA84B5 /* ViewController */,
+			);
+			path = WarDataSpecifiedEquipment;
+			sourceTree = "<group>";
+		};
+		93B56B132A9B877E00BA84B5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		93B56B142A9B8ECE00BA84B5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				93B56B152A9B978000BA84B5 /* WarDataDetailsTableViewCell.swift */,
+				93B56B162A9B978000BA84B5 /* WarDataDetailsTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +349,7 @@
 				933C0E462A9A730300356B40 /* WarDataListTableViewCell.xib in Resources */,
 				93B56B0C2A9AECBC00BA84B5 /* WarDataDetailsViewController.xib in Resources */,
 				9324EDBD2A991B3500338913 /* LaunchScreen.storyboard in Resources */,
+				93B56B182A9B978000BA84B5 /* WarDataDetailsTableViewCell.xib in Resources */,
 				933C0E3B2A9A6FC200356B40 /* WarDataListViewController.xib in Resources */,
 				9324EDBA2A991B3500338913 /* Assets.xcassets in Resources */,
 			);
@@ -350,10 +370,10 @@
 				9324EDB52A991B3300338913 /* BaseViewController.swift in Sources */,
 				933C0E3D2A9A704B00356B40 /* WarDataListViewController.swift in Sources */,
 				933C0E452A9A730300356B40 /* WarDataListTableViewCell.swift in Sources */,
+				93B56B172A9B978000BA84B5 /* WarDataDetailsTableViewCell.swift in Sources */,
 				93B56B112A9AF66A00BA84B5 /* Screen.swift in Sources */,
 				9324EDB12A991B3300338913 /* AppDelegate.swift in Sources */,
 				93B56B0F2A9AF23900BA84B5 /* SectionsOfDetailsScreen.swift in Sources */,
-				93B56AF22A9AC44500BA84B5 /* OptionalReportParameters.swift in Sources */,
 				9324EDB32A991B3300338913 /* SceneDelegate.swift in Sources */,
 				93B56AFB2A9ACE2F00BA84B5 /* SummaryModel.swift in Sources */,
 				933C0E492A9A7A1400356B40 /* CustomNavigationBarView.swift in Sources */,

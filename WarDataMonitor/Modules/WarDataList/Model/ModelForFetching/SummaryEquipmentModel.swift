@@ -19,14 +19,14 @@ struct SummaryEquipmentModel: Decodable {
     let mrl: Int
     let militaryAuto: Int?
     let fuelTank: Int?
-    let drone: DroneQuantityInfo
-    let navalShip: NavalShipQuantityInfo
-    let antiAircraftWarfare: AntiAircraftWarfareQuantityInfo
-    let specialEquipment: SpecialEquipmentQuantityInfo
-    let mobileSRBMSystem: MobileSRBMSystemQuantityInfo
-    let greatestLossesDirection: GreatestLossesDirectionInfo
-    var vehiclesAndFuelTanks: VehiclesAndFuelTanksQuantityInfo
-    let cruiseMissles: CruiseMisslesQuantityInfo
+    let drone: Int?
+    let navalShip: Int?
+    let antiAircraftWarfare: Int?
+    let specialEquipment: Int?
+    let mobileSRBMSystem: Int?
+    let greatestLossesDirection: String?
+    var vehiclesAndFuelTanks: Int?
+    let cruiseMissles: Int?
     
     enum CodingKeys: String, CodingKey {
         case date
@@ -67,52 +67,22 @@ extension SummaryEquipmentModel {
         self.fieldArtillery = try values.decode(Int.self, forKey: .fieldArtillery)
         self.mrl = try values.decode(Int.self, forKey: .mrl)
         
-        if let drone = try? values.decode(Int.self, forKey: .drone) {
-            self.drone = .number(drone)
-        } else {
-            self.drone = .none
-        }
-        if let navalShip = try? values.decode(Int.self, forKey: .navalShip) {
-            self.navalShip = .number(navalShip)
-        } else {
-            self.navalShip = .none
-        }
-        if let antiAircraftWarfare = try? values.decode(Int.self, forKey: .antiAircraftWarfare) {
-            self.antiAircraftWarfare = .number(antiAircraftWarfare)
-        } else {
-            self.antiAircraftWarfare = .none
-        }
-        if let specialEquipment = try? values.decode(Int.self, forKey: .specialEquipment) {
-            self.specialEquipment = .number(specialEquipment)
-        } else {
-            self.specialEquipment = .none
-        }
-        if let mobileSRBMSystem = try? values.decode(Int.self, forKey: .mobileSRBMSystem) {
-            self.mobileSRBMSystem = .number(mobileSRBMSystem)
-        } else {
-            self.mobileSRBMSystem = .none
-        }
-        if let greatestLossesDirection = try? values.decode(String.self, forKey: .greatestLossesDirection) {
-            self.greatestLossesDirection = .direction(greatestLossesDirection)
-        } else {
-            self.greatestLossesDirection = .none
-        }
+        self.drone = try? values.decode(Int.self, forKey: .drone)
+        self.navalShip = try? values.decode(Int.self, forKey: .navalShip)
+        self.antiAircraftWarfare = try? values.decode(Int.self, forKey: .antiAircraftWarfare)
+        self.specialEquipment = try? values.decode(Int.self, forKey: .specialEquipment)
+        self.mobileSRBMSystem = try? values.decode(Int.self, forKey: .mobileSRBMSystem)
+        self.greatestLossesDirection = try? values.decode(String.self, forKey: .greatestLossesDirection)
         self.militaryAuto = try? values.decode(Int.self, forKey: .militaryAuto)
         self.fuelTank = try? values.decode(Int.self, forKey: .fuelTank)
         if let vehiclesAndFuelTanks = try? values.decode(Int.self, forKey: .vehiclesAndFuelTanks) {
-            self.vehiclesAndFuelTanks = .number(vehiclesAndFuelTanks)
+            self.vehiclesAndFuelTanks = vehiclesAndFuelTanks
         } else {
             if let militaryAuto = self.militaryAuto,
                let fuelTank = self.fuelTank {
-                self.vehiclesAndFuelTanks = .number(militaryAuto + fuelTank)
-            } else {
-                self.vehiclesAndFuelTanks = .none
+                self.vehiclesAndFuelTanks = militaryAuto + fuelTank
             }
         }
-        if let cruiseMissles = try? values.decode(Int.self, forKey: .cruiseMissles) {
-            self.cruiseMissles = .number(cruiseMissles)
-        } else {
-            self.cruiseMissles = .none
-        }
+        self.cruiseMissles = try? values.decode(Int.self, forKey: .cruiseMissles)
     }
 }

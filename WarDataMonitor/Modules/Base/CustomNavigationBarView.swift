@@ -10,6 +10,7 @@ import UIKit
 class CustomNavigationBarView: UIView {
     
     
+    
     @IBOutlet private weak var navigationTitleLabel: UILabel!
     @IBOutlet private weak var contentView: UIView!
     @IBOutlet private weak var leadingNavigationBarItemButton: UIButton!
@@ -26,7 +27,7 @@ class CustomNavigationBarView: UIView {
     }
 
     private func commonInit() {
-        Bundle.main.loadNibNamed("CustomNavigationBarView", owner: self, options: nil)
+        Bundle.main.loadNibNamed("\(CustomNavigationBarView.self)", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = bounds
         contentView.backgroundColor = .clear
@@ -45,7 +46,7 @@ class CustomNavigationBarView: UIView {
     
     func setTitle(_ title: String) {
         navigationTitleLabel.text = title
-        navigationTitleLabel.font = .systemFont(ofSize: 32, weight: .bold)
+        navigationTitleLabel.font = .systemFont(ofSize: 24, weight: .medium)
     }
     
     @objc private func leadingButtonTapped() {

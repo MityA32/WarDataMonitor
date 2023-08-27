@@ -14,3 +14,7 @@ enum WarDataRequest {
     static let personnelFilePath = "data/russia_losses_personnel.json"
     static let equipmentFilePath = "data/russia_losses_equipment.json"
 }
+
+enum WarDataListTableViewConfiguration {
+    static let rowHeight: CGFloat = 140
+}

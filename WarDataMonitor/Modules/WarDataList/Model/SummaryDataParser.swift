@@ -7,12 +7,12 @@
 
 import Foundation
 
-class SummaryDataParser {
+final class SummaryDataParser {
     
     func parseSummaryPersonnelModelToSummaryPersonnel(_ model: SummaryPersonnelModel) -> SummaryPersonnel {
         let powValue: String
         switch model.pow {
-            case .number(let value):
+            case .some(let value):
                 powValue = "\(value)"
             case .none:
                 powValue = "No info"

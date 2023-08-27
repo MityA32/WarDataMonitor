@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SummaryDataFetcher {
+final class SummaryDataFetcher {
     
     func readJSONFromGitHub<T: Decodable>(username: String, repository: String, branch: String, filePath: String, dataType: T.Type, completion: @escaping (Result<[T], Error>) -> Void) {
         let urlString = "https://raw.githubusercontent.com/\(username)/\(repository)/\(branch)/\(filePath)"
@@ -22,7 +22,7 @@ class SummaryDataFetcher {
                 completion(.failure(error))
                 return
             }
-            
+
             if let data = data {
                 do {
                     let decoder = JSONDecoder()

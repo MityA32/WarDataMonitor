@@ -7,9 +7,10 @@
 
 import UIKit
 
-class WarDataListTableViewCell: UITableViewCell {
+final class WarDataListTableViewCell: UITableViewCell {
 
-    static let id = "WarDataListTableViewCell"
+    static let nibName = "\(WarDataListTableViewCell.self)"
+    static let id = "\(WarDataListTableViewCell.self)"
     
     @IBOutlet private weak var dateLabel: UILabel!
     @IBOutlet private weak var dayLabel: UILabel!

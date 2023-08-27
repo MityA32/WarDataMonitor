@@ -7,9 +7,38 @@
 
 import Foundation
 
+enum Section: CaseIterable {
+    case general
+    case personnel
+    case equipment
+}
+
+extension Section {
+    var index: Int {
+        switch self {
+        case .general:
+            return 0
+        case .personnel:
+            return 1
+        case .equipment:
+            return 2
+        }
+    }
+    
+    var title: String {
+        switch self {
+        case .general:
+            return "General"
+        case .personnel:
+            return "Personnel"
+        case .equipment:
+            return "Equipment"
+        }
+    }
+}
+
 enum GeneralSectionFields: CaseIterable {
     case date
-    case day
 }
 
 extension GeneralSectionFields {
@@ -17,8 +46,6 @@ extension GeneralSectionFields {
         switch self {
         case .date:
             return "Date"
-        case .day:
-            return "Day"
         }
     }
 }

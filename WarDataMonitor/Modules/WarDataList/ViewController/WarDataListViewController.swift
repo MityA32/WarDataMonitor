@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WarDataListViewController: UIViewController {
+final class WarDataListViewController: UIViewController {
 
     
     @IBOutlet private weak var aboveCustomNavigationBarView: UIView!
@@ -53,7 +53,7 @@ class WarDataListViewController: UIViewController {
         warDataTableView.dataSource = self
         warDataTableView.separatorStyle = .none
         warDataTableView.backgroundColor = .systemGray6
-        warDataTableView.register(UINib(nibName: "WarDataListTableViewCell", bundle: nil), forCellReuseIdentifier: WarDataListTableViewCell.id)
+        warDataTableView.register(UINib(nibName: "\(WarDataListTableViewCell.self)", bundle: nil), forCellReuseIdentifier: WarDataListTableViewCell.id)
     }
     
 }
@@ -71,7 +71,7 @@ extension WarDataListViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        140
+        WarDataListTableViewConfiguration.rowHeight
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

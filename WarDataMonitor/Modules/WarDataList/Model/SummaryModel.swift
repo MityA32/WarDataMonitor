@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SummaryModel {
+final class SummaryModel {
     
     private let dataFetcher = SummaryDataFetcher()
     private let dataParser = SummaryDataParser()

@@ -37,55 +37,13 @@ extension SummaryEquipment {
         self.fieldArtillery = summaryEquipmentModel.fieldArtillery
         self.mrl = summaryEquipmentModel.mrl
         
-        switch summaryEquipmentModel.drone {
-        case .number(let value):
-            self.drone = "\(value)"
-        case .none:
-            self.drone = "None"
-        }
-        
-        switch summaryEquipmentModel.navalShip {
-        case .number(let value):
-            self.navalShip = "\(value)"
-        case .none:
-            self.navalShip = "None"
-        }
-        
-        switch summaryEquipmentModel.antiAircraftWarfare {
-        case .number(let value):
-            self.antiAircraftWarfare = "\(value)"
-        case .none:
-            self.antiAircraftWarfare = "None"
-        }
-        
-        switch summaryEquipmentModel.specialEquipment {
-        case .number(let value):
-            self.specialEquipment = "\(value)"
-        case .none:
-            self.specialEquipment = "None"
-        }
-        
-        switch summaryEquipmentModel.mobileSRBMSystem {
-        case .number(let value):
-            self.mobileSRBMSystem = "\(value)"
-        case .none:
-            self.mobileSRBMSystem = "None"
-        }
-        
-        switch summaryEquipmentModel.greatestLossesDirection {
-        case .direction(let value):
-            self.greatestLossesDirection = value
-        case .none:
-            self.greatestLossesDirection = "None"
-        }
-        
-        self.vehiclesAndFuelTanks = "\(summaryEquipmentModel.vehiclesAndFuelTanks)"
-        
-        switch summaryEquipmentModel.cruiseMissles {
-        case .number(let value):
-            self.cruiseMissles = "\(value)"
-        case .none:
-            self.cruiseMissles = "None"
-        }
+        self.drone = summaryEquipmentModel.drone.map { "\($0)" } ?? "None"
+        self.navalShip = summaryEquipmentModel.navalShip.map { "\($0)" } ?? "None"
+        self.antiAircraftWarfare = summaryEquipmentModel.antiAircraftWarfare.map { "\($0)" } ?? "None"
+        self.specialEquipment = summaryEquipmentModel.specialEquipment.map { "\($0)" } ?? "None"
+        self.mobileSRBMSystem = summaryEquipmentModel.mobileSRBMSystem.map { "\($0)" } ?? "None"
+        self.greatestLossesDirection = summaryEquipmentModel.greatestLossesDirection ?? "None"
+        self.vehiclesAndFuelTanks = summaryEquipmentModel.vehiclesAndFuelTanks.map { "\($0)" } ?? "None"
+        self.cruiseMissles = summaryEquipmentModel.cruiseMissles.map { "\($0)" } ?? "None"
     }
 }
