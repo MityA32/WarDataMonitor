@@ -12,7 +12,9 @@ class CustomNavigationBarView: UIView {
     
     @IBOutlet private weak var navigationTitleLabel: UILabel!
     @IBOutlet private weak var contentView: UIView!
-
+    @IBOutlet private weak var leadingNavigationBarItemButton: UIButton!
+    weak var popDelegate: PopViewControllerDelegate?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -31,8 +33,22 @@ class CustomNavigationBarView: UIView {
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     }
     
+    func setupBar(by type: Screen) {
+        switch type {
+        case .warDataList:
+            leadingNavigationBarItemButton.isHidden = true
+        case .warDataElementDetails:
+            leadingNavigationBarItemButton.isHidden = false
+            leadingNavigationBarItemButton.addTarget(popDelegate, action: #selector(leadingButtonTapped), for: .touchUpInside)
+        }
+    }
+    
     func setTitle(_ title: String) {
         navigationTitleLabel.text = title
         navigationTitleLabel.font = .systemFont(ofSize: 32, weight: .bold)
+    }
+    
+    @objc private func leadingButtonTapped() {
+        popDelegate?.popViewController()
     }
 }

@@ -30,6 +30,8 @@
 		93B56B082A9ADE0800BA84B5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B072A9ADE0800BA84B5 /* String+Extension.swift */; };
 		93B56B0B2A9AECBC00BA84B5 /* WarDataDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B092A9AECBC00BA84B5 /* WarDataDetailsViewController.swift */; };
 		93B56B0C2A9AECBC00BA84B5 /* WarDataDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B56B0A2A9AECBC00BA84B5 /* WarDataDetailsViewController.xib */; };
+		93B56B0F2A9AF23900BA84B5 /* SectionsOfDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B0E2A9AF23900BA84B5 /* SectionsOfDetailsScreen.swift */; };
+		93B56B112A9AF66A00BA84B5 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B102A9AF66A00BA84B5 /* Screen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		93B56B072A9ADE0800BA84B5 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		93B56B092A9AECBC00BA84B5 /* WarDataDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarDataDetailsViewController.swift; sourceTree = "<group>"; };
 		93B56B0A2A9AECBC00BA84B5 /* WarDataDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WarDataDetailsViewController.xib; sourceTree = "<group>"; };
+		93B56B0E2A9AF23900BA84B5 /* SectionsOfDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsOfDetailsScreen.swift; sourceTree = "<group>"; };
+		93B56B102A9AF66A00BA84B5 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 				9324EDB42A991B3300338913 /* BaseViewController.swift */,
 				933C0E482A9A7A1400356B40 /* CustomNavigationBarView.swift */,
 				933C0E4A2A9A7A2C00356B40 /* CustomNavigationBarView.xib */,
+				93B56B102A9AF66A00BA84B5 /* Screen.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 		933C0E372A9A6EC700356B40 /* WarDataListElementDetails */ = {
 			isa = PBXGroup;
 			children = (
+				93B56B0D2A9AF1ED00BA84B5 /* Model */,
 				933C0E382A9A6F6F00356B40 /* ViewController */,
 			);
 			path = WarDataListElementDetails;
@@ -254,6 +260,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		93B56B0D2A9AF1ED00BA84B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93B56B0E2A9AF23900BA84B5 /* SectionsOfDetailsScreen.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -336,7 +350,9 @@
 				9324EDB52A991B3300338913 /* BaseViewController.swift in Sources */,
 				933C0E3D2A9A704B00356B40 /* WarDataListViewController.swift in Sources */,
 				933C0E452A9A730300356B40 /* WarDataListTableViewCell.swift in Sources */,
+				93B56B112A9AF66A00BA84B5 /* Screen.swift in Sources */,
 				9324EDB12A991B3300338913 /* AppDelegate.swift in Sources */,
+				93B56B0F2A9AF23900BA84B5 /* SectionsOfDetailsScreen.swift in Sources */,
 				93B56AF22A9AC44500BA84B5 /* OptionalReportParameters.swift in Sources */,
 				9324EDB32A991B3300338913 /* SceneDelegate.swift in Sources */,
 				93B56AFB2A9ACE2F00BA84B5 /* SummaryModel.swift in Sources */,

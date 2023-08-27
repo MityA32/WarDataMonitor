@@ -44,6 +44,7 @@ class WarDataListViewController: UIViewController {
     
     private func setupNavigationBar() {
         navigationBarView.setTitle("War Data List")
+        navigationBarView.setupBar(by: .warDataList)
         aboveCustomNavigationBarView.backgroundColor = .systemGray5
     }
     
@@ -75,6 +76,9 @@ extension WarDataListViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let warDataDetails = WarDataDetailsViewController(nibName: WarDataDetailsViewController.nibName, bundle: nil)
+        let size = model.personnelInfo.count
+        warDataDetails.personnelInfo = model.personnelInfo[size - indexPath.row - 1]
+        warDataDetails.equipmentInfo = model.equipmentInfo[size - indexPath.row - 1]
         navigationController?.pushViewController(warDataDetails, animated: true)
     }
     

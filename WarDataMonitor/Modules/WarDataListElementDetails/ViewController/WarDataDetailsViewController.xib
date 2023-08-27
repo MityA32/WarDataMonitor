@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WarDataDetailsViewController" customModule="WarDataMonitor" customModuleProvider="target">
             <connections>
+                <outlet property="customNavigationBarView" destination="0WW-uS-Z1M" id="X2M-OB-gv0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,12 +18,37 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGt-U3-PD3">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="59"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0WW-uS-Z1M" customClass="CustomNavigationBarView" customModule="WarDataMonitor" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="e5R-tY-LKg"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemPinkColor"/>
+            <constraints>
+                <constraint firstItem="0WW-uS-Z1M" firstAttribute="top" secondItem="UGt-U3-PD3" secondAttribute="bottom" id="27l-F6-xz4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UGt-U3-PD3" secondAttribute="trailing" id="2kh-yG-eFw"/>
+                <constraint firstItem="0WW-uS-Z1M" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="5QV-UL-fOu"/>
+                <constraint firstItem="UGt-U3-PD3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5xf-E9-D1e"/>
+                <constraint firstItem="0WW-uS-Z1M" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PYU-he-TQR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0WW-uS-Z1M" secondAttribute="trailing" id="PdX-An-PNu"/>
+                <constraint firstItem="UGt-U3-PD3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="l4B-dx-CSI"/>
+            </constraints>
             <point key="canvasLocation" x="119" y="21"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
