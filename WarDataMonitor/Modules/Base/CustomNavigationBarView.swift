@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomNavigationBarView: UIView {
+final class CustomNavigationBarView: UIView {
     
     
     
@@ -36,7 +36,7 @@ class CustomNavigationBarView: UIView {
     
     func setupBar(by type: Screen) {
         switch type {
-        case .warDataList:
+        case .warDataList, .specifiedEquipmentLosses:
             leadingNavigationBarItemButton.isHidden = true
         case .warDataElementDetails:
             leadingNavigationBarItemButton.isHidden = false

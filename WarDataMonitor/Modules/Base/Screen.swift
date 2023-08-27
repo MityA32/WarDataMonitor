@@ -10,4 +10,5 @@ import Foundation
 enum Screen {
     case warDataList
     case warDataElementDetails
+    case specifiedEquipmentLosses
 }

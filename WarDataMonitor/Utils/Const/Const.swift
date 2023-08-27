@@ -13,6 +13,7 @@ enum WarDataRequest {
     static let branch = "main"
     static let personnelFilePath = "data/russia_losses_personnel.json"
     static let equipmentFilePath = "data/russia_losses_equipment.json"
+    static let specifiedEquipmentLossesFilePath = "data/russia_losses_equipment_oryx.json"
 }
 
 enum WarDataListTableViewConfiguration {

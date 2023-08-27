@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WarDataDetailsTableViewCell: UITableViewCell {
+final class WarDataDetailsTableViewCell: UITableViewCell {
 
     static let id = "\(WarDataDetailsTableViewCell.self)"
     

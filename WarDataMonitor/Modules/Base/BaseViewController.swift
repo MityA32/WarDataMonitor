@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BaseViewController: UITabBarController {
+final class BaseViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +22,11 @@ class BaseViewController: UITabBarController {
     private func setupViewControllers() {
         let warDataList = WarDataListViewController(nibName: "\(WarDataListViewController.self)", bundle: nil)
         let warDataListVC = UINavigationController(rootViewController: warDataList)
-        warDataListVC.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "gamecontroller"), selectedImage: UIImage(systemName: "gamecontroller.fill"))
+        warDataListVC.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "info.circle"), selectedImage: UIImage(systemName: "info.circle.fill"))
         
         let warDataSpecifiedEquipmentList = WarDataSpecifiedEquipmentViewController(nibName: "\(WarDataSpecifiedEquipmentViewController.self)", bundle: nil)
         let warDataSpecifiedEquipmentListVC = UINavigationController(rootViewController: warDataSpecifiedEquipmentList)
-        warDataSpecifiedEquipmentListVC.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "star"), selectedImage: UIImage(systemName: "star.fill"))
+        warDataSpecifiedEquipmentListVC.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "car"), selectedImage: UIImage(systemName: "car.fill"))
         
         viewControllers = [warDataListVC, warDataSpecifiedEquipmentListVC]
         tabBar.backgroundColor = .systemGray5

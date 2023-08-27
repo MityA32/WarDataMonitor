@@ -35,6 +35,11 @@
 		93B56B182A9B978000BA84B5 /* WarDataDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B56B162A9B978000BA84B5 /* WarDataDetailsTableViewCell.xib */; };
 		93B56B1B2A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B192A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.swift */; };
 		93B56B1C2A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B56B1A2A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.xib */; };
+		93B56B1F2A9BEF9000BA84B5 /* SpecifiedEquipmentLossesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B1E2A9BEF9000BA84B5 /* SpecifiedEquipmentLossesModel.swift */; };
+		93B56B222A9BF1E800BA84B5 /* SpecifiedEquipmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B212A9BF1E800BA84B5 /* SpecifiedEquipmentModel.swift */; };
+		93B56B242A9BF7E100BA84B5 /* SpecifiedEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B232A9BF7E100BA84B5 /* SpecifiedEquipment.swift */; };
+		93B56B282A9C10AA00BA84B5 /* SpecifiedEquipmentLossesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56B262A9C10AA00BA84B5 /* SpecifiedEquipmentLossesTableViewCell.swift */; };
+		93B56B292A9C10AA00BA84B5 /* SpecifiedEquipmentLossesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B56B272A9C10AA00BA84B5 /* SpecifiedEquipmentLossesTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +73,11 @@
 		93B56B162A9B978000BA84B5 /* WarDataDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WarDataDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		93B56B192A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarDataSpecifiedEquipmentViewController.swift; sourceTree = "<group>"; };
 		93B56B1A2A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WarDataSpecifiedEquipmentViewController.xib; sourceTree = "<group>"; };
+		93B56B1E2A9BEF9000BA84B5 /* SpecifiedEquipmentLossesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecifiedEquipmentLossesModel.swift; sourceTree = "<group>"; };
+		93B56B212A9BF1E800BA84B5 /* SpecifiedEquipmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecifiedEquipmentModel.swift; sourceTree = "<group>"; };
+		93B56B232A9BF7E100BA84B5 /* SpecifiedEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecifiedEquipment.swift; sourceTree = "<group>"; };
+		93B56B262A9C10AA00BA84B5 /* SpecifiedEquipmentLossesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecifiedEquipmentLossesTableViewCell.swift; sourceTree = "<group>"; };
+		93B56B272A9C10AA00BA84B5 /* SpecifiedEquipmentLossesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecifiedEquipmentLossesTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +280,8 @@
 		93B56B122A9B7B5A00BA84B5 /* WarDataSpecifiedEquipment */ = {
 			isa = PBXGroup;
 			children = (
+				93B56B252A9C108300BA84B5 /* Cell */,
+				93B56B1D2A9BEF7E00BA84B5 /* Model */,
 				93B56B132A9B877E00BA84B5 /* ViewController */,
 			);
 			path = WarDataSpecifiedEquipment;
@@ -289,6 +301,25 @@
 			children = (
 				93B56B152A9B978000BA84B5 /* WarDataDetailsTableViewCell.swift */,
 				93B56B162A9B978000BA84B5 /* WarDataDetailsTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		93B56B1D2A9BEF7E00BA84B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93B56B1E2A9BEF9000BA84B5 /* SpecifiedEquipmentLossesModel.swift */,
+				93B56B212A9BF1E800BA84B5 /* SpecifiedEquipmentModel.swift */,
+				93B56B232A9BF7E100BA84B5 /* SpecifiedEquipment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93B56B252A9C108300BA84B5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				93B56B262A9C10AA00BA84B5 /* SpecifiedEquipmentLossesTableViewCell.swift */,
+				93B56B272A9C10AA00BA84B5 /* SpecifiedEquipmentLossesTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -352,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				933C0E4B2A9A7A2C00356B40 /* CustomNavigationBarView.xib in Resources */,
+				93B56B292A9C10AA00BA84B5 /* SpecifiedEquipmentLossesTableViewCell.xib in Resources */,
 				933C0E462A9A730300356B40 /* WarDataListTableViewCell.xib in Resources */,
 				93B56B0C2A9AECBC00BA84B5 /* WarDataDetailsViewController.xib in Resources */,
 				93B56B1C2A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.xib in Resources */,
@@ -376,12 +408,16 @@
 				93B56AFF2A9ACFDF00BA84B5 /* SummaryDataParser.swift in Sources */,
 				9324EDB52A991B3300338913 /* BaseViewController.swift in Sources */,
 				933C0E3D2A9A704B00356B40 /* WarDataListViewController.swift in Sources */,
+				93B56B222A9BF1E800BA84B5 /* SpecifiedEquipmentModel.swift in Sources */,
 				933C0E452A9A730300356B40 /* WarDataListTableViewCell.swift in Sources */,
 				93B56B172A9B978000BA84B5 /* WarDataDetailsTableViewCell.swift in Sources */,
 				93B56B112A9AF66A00BA84B5 /* Screen.swift in Sources */,
+				93B56B242A9BF7E100BA84B5 /* SpecifiedEquipment.swift in Sources */,
 				9324EDB12A991B3300338913 /* AppDelegate.swift in Sources */,
 				93B56B0F2A9AF23900BA84B5 /* SectionsOfDetailsScreen.swift in Sources */,
+				93B56B282A9C10AA00BA84B5 /* SpecifiedEquipmentLossesTableViewCell.swift in Sources */,
 				9324EDB32A991B3300338913 /* SceneDelegate.swift in Sources */,
+				93B56B1F2A9BEF9000BA84B5 /* SpecifiedEquipmentLossesModel.swift in Sources */,
 				93B56AFB2A9ACE2F00BA84B5 /* SummaryModel.swift in Sources */,
 				933C0E492A9A7A1400356B40 /* CustomNavigationBarView.swift in Sources */,
 				93B56B1B2A9BA65600BA84B5 /* WarDataSpecifiedEquipmentViewController.swift in Sources */,
