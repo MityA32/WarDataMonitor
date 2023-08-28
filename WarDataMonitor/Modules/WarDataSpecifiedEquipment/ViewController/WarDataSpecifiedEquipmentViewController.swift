@@ -86,28 +86,23 @@ extension WarDataSpecifiedEquipmentViewController: UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let sectionButton = UIButton()
-//        sectionButton.setTitle(String(equipmentTypes[section].codingKey),
-//                               for: .normal)
-        sectionButton.backgroundColor = .systemBlue
+        var configuration = UIButton.Configuration.plain()
+        let arrowImageName = isSectionHidden(section) ? "chevron.up" : "chevron.down"
+        let arrowImage = UIImage(systemName: arrowImageName)?.withRenderingMode(.alwaysTemplate)
+        configuration.image = arrowImage
+        configuration.imagePadding = 10
+        let title = String(equipmentTypes[section].codingKey)
+        configuration.title = title
+        configuration.titleAlignment = .center
+        configuration.baseForegroundColor = .white
+        configuration.background = UIBackgroundConfiguration.listPlainCell()
+        configuration.background.backgroundColor = UIColor.systemBlue
+        configuration.imagePlacement = .trailing
+        let sectionButton = UIButton(configuration: configuration)
         sectionButton.tag = section
-        
         sectionButton.addTarget(self,
                                 action: #selector(self.hideSection(sender:)),
                                 for: .touchUpInside)
-        let title = String(equipmentTypes[section].codingKey)
-            let attributedTitle = NSAttributedString(string: title,
-                                                     attributes: [
-                                                         .font: UIFont.systemFont(ofSize: 17),
-                                                         .foregroundColor: UIColor.white
-                                                     ])
-        sectionButton.setAttributedTitle(attributedTitle, for: .normal)
-        let arrowImageName = isSectionHidden(section) ? "chevron.up" : "chevron.down"
-        let arrowImage = UIImage(systemName: arrowImageName)
-        sectionButton.setImage(arrowImage, for: .normal)
-        sectionButton.tintColor = .white
-        sectionButton.semanticContentAttribute = .forceRightToLeft
-        sectionButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 0)
         return sectionButton
     }
     
