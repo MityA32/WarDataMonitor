@@ -37,6 +37,7 @@ final class WarDataSpecifiedEquipmentViewController: UIViewController {
         }
         setupCustomNavigationBar()
         setupTableView()
+        hiddenSections = Set(equipmentTypes.indices)
     }
     
     private func setupCustomNavigationBar() {
@@ -73,23 +74,45 @@ extension WarDataSpecifiedEquipmentViewController: UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = specifiedEquipmentLossesTableView.dequeueReusableCell(withIdentifier: SpecifiedEquipmentLossesTableViewCell.id, for: indexPath) as! SpecifiedEquipmentLossesTableViewCell
+        cell.isUserInteractionEnabled = false
         let equipmentType = equipmentTypes[indexPath.section]
-        guard let section = self.model.specifiedEquipmentList[equipmentType] else { return UITableViewCell() }
+        guard let section = self.model.specifiedEquipmentList[equipmentType] else { return .init() }
         cell.configure(from: section[indexPath.row])
-        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 44.0
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let sectionButton = UIButton()
-        sectionButton.setTitle(String(equipmentTypes[section].codingKey),
-                               for: .normal)
+//        sectionButton.setTitle(String(equipmentTypes[section].codingKey),
+//                               for: .normal)
         sectionButton.backgroundColor = .systemBlue
         sectionButton.tag = section
+        
         sectionButton.addTarget(self,
                                 action: #selector(self.hideSection(sender:)),
                                 for: .touchUpInside)
+        let title = String(equipmentTypes[section].codingKey)
+            let attributedTitle = NSAttributedString(string: title,
+                                                     attributes: [
+                                                         .font: UIFont.systemFont(ofSize: 17),
+                                                         .foregroundColor: UIColor.white
+                                                     ])
+        sectionButton.setAttributedTitle(attributedTitle, for: .normal)
+        let arrowImageName = isSectionHidden(section) ? "chevron.up" : "chevron.down"
+        let arrowImage = UIImage(systemName: arrowImageName)
+        sectionButton.setImage(arrowImage, for: .normal)
+        sectionButton.tintColor = .white
+        sectionButton.semanticContentAttribute = .forceRightToLeft
+        sectionButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 0)
         return sectionButton
+    }
+    
+    func isSectionHidden(_ section: Int) -> Bool {
+        return hiddenSections.contains(section)
     }
     
     @objc
@@ -115,5 +138,8 @@ extension WarDataSpecifiedEquipmentViewController: UITableViewDelegate, UITableV
             self.specifiedEquipmentLossesTableView.deleteRows(at: indexPathsForSection(),
                                       with: .fade)
         }
+        let arrowImageName = isSectionHidden(section) ? "chevron.up" : "chevron.down"
+        let arrowImage = UIImage(systemName: arrowImageName)
+        sender.setImage(arrowImage, for: .normal)
     }
 }

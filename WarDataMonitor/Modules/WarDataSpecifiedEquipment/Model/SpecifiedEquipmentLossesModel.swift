@@ -8,7 +8,6 @@
 import Foundation
 
 class SpecifiedEquipmentLossesModel {
-    
     private let dataFetcher = SummaryDataFetcher()
     var specifiedEquipmentList: [EquipmentType: [SpecifiedEquipment]] = [:]
     var didUpdatedPersonnelInfoList: (() -> Void)?

@@ -32,7 +32,6 @@ final class WarDataDetailsViewController: UIViewController {
     }
 
     private func setupView() {
-        
         setupCustomNavigationBar()
         setupTableView()
     }
@@ -43,6 +42,7 @@ final class WarDataDetailsViewController: UIViewController {
         customNavigationBarView.setupBar(by: .warDataElementDetails)
         customNavigationBarView.popDelegate = self
     }
+
     private func setupTableView() {
         detailsOfDayTableView.delegate = self
         detailsOfDayTableView.dataSource = self
@@ -90,7 +90,6 @@ extension WarDataDetailsViewController: UITableViewDelegate, UITableViewDataSour
         case .equipment:
             cell.configureEquipmentSectionCell(from: equipmentInfo, by: equipmentSectionDataSource[indexPath.row])
         }
-        
         return cell
     }
     

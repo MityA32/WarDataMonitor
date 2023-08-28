@@ -8,8 +8,6 @@
 import UIKit
 
 final class WarDataListViewController: UIViewController {
-
-    
     @IBOutlet private weak var aboveCustomNavigationBarView: UIView!
     @IBOutlet private weak var navigationBarView: CustomNavigationBarView!
     @IBOutlet private weak var warDataTableView: UITableView!
@@ -55,25 +53,24 @@ final class WarDataListViewController: UIViewController {
         warDataTableView.backgroundColor = .systemGray6
         warDataTableView.register(UINib(nibName: "\(WarDataListTableViewCell.self)", bundle: nil), forCellReuseIdentifier: WarDataListTableViewCell.id)
     }
-    
 }
 
 extension WarDataListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return model.personnelInfo.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = warDataTableView.dequeueReusableCell(withIdentifier: WarDataListTableViewCell.id, for: indexPath) as! WarDataListTableViewCell
         let size = model.personnelInfo.count
         cell.configure(from: model.personnelInfo[size - indexPath.row - 1])
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        WarDataListTableViewConfiguration.rowHeight
+        WarDataListTableViewCell.rowHeight
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let warDataDetails = WarDataDetailsViewController(nibName: WarDataDetailsViewController.nibName, bundle: nil)
         let size = model.personnelInfo.count

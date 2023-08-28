@@ -18,7 +18,6 @@ struct SpecifiedEquipment {
         self.model = model.model
         self.manufacturer = model.manufacturer
         self.lossesTotal = model.lossesTotal
-        
     }
 }
 

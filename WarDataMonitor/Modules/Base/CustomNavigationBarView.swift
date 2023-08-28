@@ -8,9 +8,6 @@
 import UIKit
 
 final class CustomNavigationBarView: UIView {
-    
-    
-    
     @IBOutlet private weak var navigationTitleLabel: UILabel!
     @IBOutlet private weak var contentView: UIView!
     @IBOutlet private weak var leadingNavigationBarItemButton: UIButton!

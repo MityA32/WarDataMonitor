@@ -16,7 +16,6 @@ final class SummaryModel {
     var equipmentInfo = [SummaryEquipment]()
     var didUpdatedPersonnelInfoList: (() -> Void)?
     
-    
     init() {
         fetchPersonnelInfo()
         fetchEquipmentInfo()

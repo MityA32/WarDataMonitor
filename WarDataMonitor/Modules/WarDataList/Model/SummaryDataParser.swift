@@ -8,7 +8,6 @@
 import Foundation
 
 final class SummaryDataParser {
-    
     func parseSummaryPersonnelModelToSummaryPersonnel(_ model: SummaryPersonnelModel) -> SummaryPersonnel {
         let powValue: String
         switch model.pow {
@@ -18,11 +17,12 @@ final class SummaryDataParser {
                 powValue = "No info"
         }
         
-        return SummaryPersonnel(date: model.date.changeDateFormat(),
-                                day: model.day,
-                                personnel: model.personnel,
-                                personnelAbout: model.personnelAbout,
-                                pow: powValue)
+        return SummaryPersonnel(
+            date: model.date.changeDateFormat(),
+            day: model.day,
+            personnel: model.personnel,
+            personnelAbout: model.personnelAbout,
+            pow: powValue
+        )
     }
-    
 }

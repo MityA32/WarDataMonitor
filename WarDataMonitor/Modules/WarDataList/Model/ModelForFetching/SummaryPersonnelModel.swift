@@ -22,7 +22,6 @@ struct SummaryPersonnelModel: Decodable {
         case personnelAbout = "personnel*"
         case pow = "POW"
     }
-    
 }
 
 extension SummaryPersonnelModel {

@@ -8,8 +8,7 @@
 import UIKit
 
 final class WarDataListTableViewCell: UITableViewCell {
-
-    static let nibName = "\(WarDataListTableViewCell.self)"
+    static let rowHeight: CGFloat = 140
     static let id = "\(WarDataListTableViewCell.self)"
     
     @IBOutlet private weak var dateLabel: UILabel!
