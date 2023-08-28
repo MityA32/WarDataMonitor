@@ -18,22 +18,22 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dPJ-2g-gZP">
-                        <rect key="frame" x="16" y="5" width="307" height="205"/>
+                        <rect key="frame" x="16" y="8" width="307" height="199"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlA-bc-lb8" userLabel="Model">
-                                <rect key="frame" x="8" y="7.9999999999999964" width="291" height="57.666666666666657"/>
+                                <rect key="frame" x="8" y="7.9999999999999964" width="291" height="55.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ps8-Ct-Wfo" userLabel="manufacture">
-                                <rect key="frame" x="8" y="73.666666666666671" width="291" height="57.666666666666671"/>
+                                <rect key="frame" x="8" y="71.666666666666671" width="291" height="55.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBd-67-tWn" userLabel="total">
-                                <rect key="frame" x="8" y="139.33333333333334" width="291" height="57.666666666666657"/>
+                                <rect key="frame" x="8" y="135.33333333333334" width="291" height="55.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -49,9 +49,9 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="dPJ-2g-gZP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="GBk-E3-LSV"/>
+                    <constraint firstItem="dPJ-2g-gZP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="GBk-E3-LSV"/>
                     <constraint firstAttribute="trailing" secondItem="dPJ-2g-gZP" secondAttribute="trailing" constant="16" id="cRh-Ll-jYk"/>
-                    <constraint firstAttribute="bottom" secondItem="dPJ-2g-gZP" secondAttribute="bottom" constant="5" id="kAS-8Y-nSx"/>
+                    <constraint firstAttribute="bottom" secondItem="dPJ-2g-gZP" secondAttribute="bottom" constant="8" id="kAS-8Y-nSx"/>
                     <constraint firstItem="dPJ-2g-gZP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="sEO-6P-dvg"/>
                 </constraints>
             </tableViewCellContentView>
